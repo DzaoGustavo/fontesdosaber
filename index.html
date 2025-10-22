@@ -1,48 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fontes do Saber</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
-            color: #333;
-            margin: 0;
-            padding: 40px;
-            text-align: center;
-        }
-        h1 {
-            color: #2c3e50;
-        }
-        .book {
-            background-color: white;
-            padding: 20px;
-            margin: 20px auto;
-            border-radius: 10px;
-            max-width: 600px;
-            box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        }
-        a {
-            color: #0066cc;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fontes do Saber</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: radial-gradient(circle at center, #0a0f1f 0%, #000 80%);
+      color: #e8e6e3;
+      text-align: center;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      margin-top: 60px;
+      color: #f5d67b;
+      letter-spacing: 1px;
+    }
+
+    p.subtitle {
+      font-size: 1.2rem;
+      color: #c0bbad;
+      margin-bottom: 40px;
+    }
+
+    .book {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid rgba(255, 215, 0, 0.2);
+      border-radius: 16px;
+      margin: 30px auto;
+      padding: 25px;
+      width: 90%;
+      max-width: 500px;
+      backdrop-filter: blur(6px);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .book:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 0 20px rgba(255, 215, 0, 0.15);
+    }
+
+    .book h2 {
+      font-family: 'Playfair Display', serif;
+      color: #f5d67b;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .book p {
+      color: #bfbfbf;
+      margin-bottom: 15px;
+      font-size: 1rem;
+    }
+
+    a {
+      color: #ffd86b;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      margin: 50px 0;
+      font-size: 0.9rem;
+      color: #888;
+    }
+
+    /* Fundo estelar animado */
+    .stars {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: transparent url('https://www.transparenttextures.com/patterns/stardust.png') repeat;
+      opacity: 0.2;
+      animation: drift 120s linear infinite;
+      z-index: -1;
+    }
+
+    @keyframes drift {
+      from { background-position: 0 0; }
+      to { background-position: 10000px 5000px; }
+    }
+  </style>
 </head>
 <body>
-    <h1>📚 Fontes do Saber</h1>
-    <p>Livros que expandem a consciência e revelam verdades universais.</p>
+  <div class="stars"></div>
 
-    <div class="book">
-        <h2>Mensageiros do Amanhecer</h2>
-        <p>Barbara Marciniak</p>
-        <a href="https://amzn.to/3KUAk8i" target="_blank">Ver na Amazon</a>
-    </div>
+  <h1>🌌 Fontes do Saber</h1>
+  <p class="subtitle">Livros que expandem a consciência e revelam verdades universais.</p>
 
+  <div class="book">
+    <h2>Mensageiros do Amanhecer</h2>
+    <p>Barbara Marciniak</p>
+    <a href="https://amzn.to/3KUAk8i" target="_blank">🔗 Ver na Amazon</a>
+  </div>
+
+  <footer>
+    © 2025 Fontes do Saber • Afiliado Amazon
+  </footer>
 </body>
 </html>
